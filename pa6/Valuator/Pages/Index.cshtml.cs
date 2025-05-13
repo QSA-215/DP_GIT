@@ -29,11 +29,7 @@ public class IndexModel : PageModel
         IServer server = _redis.GetServerOfDB(shard);//!!!
 
         string[] keys = server.Keys(pattern: "TEXT-*").Select(k => (string)k).ToArray();//!!!
-        string[] values = [];
-        foreach (string key in keys.ToArray())
-        {
-            values[values.Length] = (_redis.Get(key, shard));
-        } 
+        string[] values = keys.Select(key => _redis.Get(key, shard)).ToArray();//!!!
 
         for (int i = 0; i < keys.Length; i++)
         {

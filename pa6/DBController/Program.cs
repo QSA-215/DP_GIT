@@ -24,12 +24,25 @@ public class RedisDB
 
     private IConnectionMultiplexer GetConnectionMultiplexer(string shard)
     {
-        string environmentLocation = $"REDIS_{shard}_CONNECTION_STR";
-        string connectionStr = Environment.GetEnvironmentVariable(environmentLocation);
-
-        if (string.IsNullOrWhiteSpace(connectionStr))
+        string connectionStr;
+        Console.WriteLine(shard);
+        
+        switch (shard)
         {
-            throw new ArgumentException("Unknown shard");
+            case "MAIN":
+                connectionStr = "redismain:6379";
+                break;
+            case "RU":
+                connectionStr = "redisru:6379";
+                break;
+            case "EU":
+                connectionStr = "rediseu:6379";
+                break;
+            case "ASIA":
+                connectionStr = "redisasia:6379";
+                break;
+            default:
+                throw new ArgumentException("Unknown shard");
         }
 
         return ConnectionMultiplexer.Connect(connectionStr);

@@ -6,14 +6,15 @@
 using Microsoft.AspNetCore.Mvc.RazorPages;
 //using Microsoft.Extensions.Logging;
 using StackExchange.Redis;
+using DBController;
 
 namespace Valuator.Pages;
 public class SummaryModel : PageModel
 {
     private readonly ILogger<SummaryModel> _logger;
-    private readonly IConnectionMultiplexer _redis;
+    private readonly RedisDB _redis;
 
-    public SummaryModel(ILogger<SummaryModel> logger, IConnectionMultiplexer redis)
+    public SummaryModel(ILogger<SummaryModel> logger, RedisDB redis)
     {
         _logger = logger;
         _redis = redis;
@@ -26,13 +27,15 @@ public class SummaryModel : PageModel
     {
         _logger.LogDebug(id);
 
-        var db = _redis.GetDatabase();
+        string shard = _redis.Get(id, "MAIN");
 
-        while (db.StringGet($"RANK-{id}") == RedisValue.Null)
+        Console.WriteLine("sharddd", shard);
+
+        while (_redis.Get($"RANK-{id}", shard) == RedisValue.Null)
         {
-            Rank = (double)db.StringGet($"RANK-{id}");
+            double.Parse(_redis.Get($"RANK-{id}", shard));
         }
-        Rank = (double)db.StringGet($"RANK-{id}");
-        Similarity = (double)db.StringGet($"SIMILARITY-{id}");
+        //Rank = double.Parse(_redis.Get($"RANK-{id}", shard));
+        Similarity = double.Parse(_redis.Get($"SIMILARITY-{id}", shard));
     }
 }
