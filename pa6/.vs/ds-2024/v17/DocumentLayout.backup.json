@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "D:\\1\u0060University\\DP\\pa6\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BB3B7AF3-09CB-8246-6EE6-CF385AAB4AA1}|Valuator\\Valuator.csproj|d:\\1\u0060university\\dp\\pa6\\valuator\\pages\\summary.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB3B7AF3-09CB-8246-6EE6-CF385AAB4AA1}|Valuator\\Valuator.csproj|solutionrelative:valuator\\pages\\summary.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{30948AA7-D074-4557-AF8B-59CB1149FE77}|DBController\\DBController.csproj|d:\\1\u0060university\\dp\\pa6\\dbcontroller\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{30948AA7-D074-4557-AF8B-59CB1149FE77}|DBController\\DBController.csproj|solutionrelative:dbcontroller\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB3B7AF3-09CB-8246-6EE6-CF385AAB4AA1}|Valuator\\Valuator.csproj|d:\\1\u0060university\\dp\\pa6\\valuator\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB3B7AF3-09CB-8246-6EE6-CF385AAB4AA1}|Valuator\\Valuator.csproj|solutionrelative:valuator\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BB3B7AF3-09CB-8246-6EE6-CF385AAB4AA1}|Valuator\\Valuator.csproj|d:\\1\u0060university\\dp\\pa6\\valuator\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,19 +31,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Summary.cshtml.cs",
+              "DocumentMoniker": "D:\\1\u0060University\\DP\\pa6\\Valuator\\Pages\\Summary.cshtml.cs",
+              "RelativeDocumentMoniker": "Valuator\\Pages\\Summary.cshtml.cs",
+              "ToolTip": "D:\\1\u0060University\\DP\\pa6\\Valuator\\Pages\\Summary.cshtml.cs",
+              "RelativeToolTip": "Valuator\\Pages\\Summary.cshtml.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAywCkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T17:51:35.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "D:\\1\u0060University\\DP\\pa6\\Valuator\\Pages\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "Valuator\\Pages\\Index.cshtml.cs",
+              "ToolTip": "D:\\1\u0060University\\DP\\pa6\\Valuator\\Pages\\Index.cshtml.cs",
+              "RelativeToolTip": "Valuator\\Pages\\Index.cshtml.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAA9wCcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T17:42:19.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\1\u0060University\\DP\\pa6\\DBController\\Program.cs",
               "RelativeDocumentMoniker": "DBController\\Program.cs",
               "ToolTip": "D:\\1\u0060University\\DP\\pa6\\DBController\\Program.cs",
               "RelativeToolTip": "DBController\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwCwAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-13T10:30:33.65Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\1\u0060University\\DP\\pa6\\Valuator\\Program.cs",
               "RelativeDocumentMoniker": "Valuator\\Program.cs",

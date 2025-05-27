@@ -1,0 +1,22 @@
+[
+  {
+    "Text": "text",
+    "ExpectedRank": 0
+  },
+  {
+    "Text": "...",
+    "ExpectedRank": 1
+  },
+  {
+    "Text": "text!",
+    "ExpectedRank": 0.2
+  },
+  {
+    "Text": "😀",
+    "ExpectedRank": 1
+  },
+  {
+    "Text": "",
+    "ExpectedRank": 0
+  }
+]

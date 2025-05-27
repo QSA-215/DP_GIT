@@ -1,0 +1,126 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\1\u0060University\\DP\\pa7\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D66AEE2E-781C-4FE4-AA75-C963716A5703}|UnitTests\\UnitTests.csproj|d:\\1\u0060university\\dp\\pa7\\unittests\\unittests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{D66AEE2E-781C-4FE4-AA75-C963716A5703}|UnitTests\\UnitTests.csproj|solutionrelative:unittests\\unittests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA67BEDE-DF8A-4F3F-B71B-D3227B973417}|E2ETests\\E2ETests.csproj|d:\\1\u0060university\\dp\\pa7\\e2etests\\e2etests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{AA67BEDE-DF8A-4F3F-B71B-D3227B973417}|E2ETests\\E2ETests.csproj|solutionrelative:e2etests\\e2etests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D66AEE2E-781C-4FE4-AA75-C963716A5703}|UnitTests\\UnitTests.csproj|d:\\1\u0060university\\dp\\pa7\\unittests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D66AEE2E-781C-4FE4-AA75-C963716A5703}|UnitTests\\UnitTests.csproj|solutionrelative:unittests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30948AA7-D074-4557-AF8B-59CB1149FE77}|DBController\\DBController.csproj|d:\\1\u0060university\\dp\\pa7\\dbcontroller\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30948AA7-D074-4557-AF8B-59CB1149FE77}|DBController\\DBController.csproj|solutionrelative:dbcontroller\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3800AF54-19B7-4DAE-A52D-BC34741BE5D7}|RankCalculator\\RankCalculator.csproj|d:\\1\u0060university\\dp\\pa7\\rankcalculator\\rankcalculatorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3800AF54-19B7-4DAE-A52D-BC34741BE5D7}|RankCalculator\\RankCalculator.csproj|solutionrelative:rankcalculator\\rankcalculatorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30948AA7-D074-4557-AF8B-59CB1149FE77}|DBController\\DBController.csproj|d:\\1\u0060university\\dp\\pa7\\dbcontroller\\dbcontroller.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{30948AA7-D074-4557-AF8B-59CB1149FE77}|DBController\\DBController.csproj|solutionrelative:dbcontroller\\dbcontroller.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "E2ETests",
+              "DocumentMoniker": "D:\\1\u0060University\\DP\\pa7\\E2ETests\\E2ETests.csproj",
+              "RelativeDocumentMoniker": "E2ETests\\E2ETests.csproj",
+              "ToolTip": "D:\\1\u0060University\\DP\\pa7\\E2ETests\\E2ETests.csproj",
+              "RelativeToolTip": "E2ETests\\E2ETests.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-27T19:41:29.887Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UnitTests",
+              "DocumentMoniker": "D:\\1\u0060University\\DP\\pa7\\UnitTests\\UnitTests.csproj",
+              "RelativeDocumentMoniker": "UnitTests\\UnitTests.csproj",
+              "ToolTip": "D:\\1\u0060University\\DP\\pa7\\UnitTests\\UnitTests.csproj",
+              "RelativeToolTip": "UnitTests\\UnitTests.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-27T19:35:47.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RankCalculatorService.cs",
+              "DocumentMoniker": "D:\\1\u0060University\\DP\\pa7\\RankCalculator\\RankCalculatorService.cs",
+              "RelativeDocumentMoniker": "RankCalculator\\RankCalculatorService.cs",
+              "ToolTip": "D:\\1\u0060University\\DP\\pa7\\RankCalculator\\RankCalculatorService.cs",
+              "RelativeToolTip": "RankCalculator\\RankCalculatorService.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAowAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T19:34:55.108Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "D:\\1\u0060University\\DP\\pa7\\UnitTests\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "UnitTests\\UnitTest1.cs",
+              "ToolTip": "D:\\1\u0060University\\DP\\pa7\\UnitTests\\UnitTest1.cs",
+              "RelativeToolTip": "UnitTests\\UnitTest1.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAIwCgAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T19:28:24.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\1\u0060University\\DP\\pa7\\DBController\\Program.cs",
+              "RelativeDocumentMoniker": "DBController\\Program.cs",
+              "ToolTip": "D:\\1\u0060University\\DP\\pa7\\DBController\\Program.cs",
+              "RelativeToolTip": "DBController\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T19:25:02.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DBController",
+              "DocumentMoniker": "D:\\1\u0060University\\DP\\pa7\\DBController\\DBController.csproj",
+              "RelativeDocumentMoniker": "DBController\\DBController.csproj",
+              "ToolTip": "D:\\1\u0060University\\DP\\pa7\\DBController\\DBController.csproj",
+              "RelativeToolTip": "DBController\\DBController.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-27T19:25:01.437Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
