@@ -1,0 +1,174 @@
+services:
+  redismain:
+    image: redis:latest
+    container_name: redisValuatorMain
+    ports:
+      - "6000:6379"
+    volumes:
+      - ./redisdata:/main-data
+    restart: unless-stopped
+    networks:
+      - app_network
+    command: ["redis-server", "--requirepass", "my_redis_main_password"]
+
+  redisru:
+    image: redis:latest
+    container_name: redisValuatorRu
+    ports:
+      - "6001:6379"
+    volumes:
+      - ./redisdata:/ru-data
+    restart: unless-stopped
+    networks:
+      - app_network
+    command: ["redis-server", "--requirepass", "my_redis_ru_password"]
+
+  rediseu:
+    image: redis:latest
+    container_name: redisValuatorEu
+    ports:
+      - "6002:6379"
+    volumes:
+      - ./redisdata:/eu-data
+    restart: unless-stopped
+    networks:
+      - app_network
+    command: ["redis-server", "--requirepass", "my_redis_eu_password"]
+
+  redisasia:
+    image: redis:latest
+    container_name: redisValuatorAsia
+    ports:
+      - "6003:6379"
+    volumes:
+      - ./redisdata:/asia-data
+    restart: unless-stopped
+    networks:
+      - app_network
+    command: ["redis-server", "--requirepass", "my_redis_asia_password"]
+    
+  redisusers:
+    image: redis:latest
+    container_name: redisValuatorUsers
+    ports:
+      - "6004:6379"
+    volumes:
+      - ./redisdata:/users-data
+    restart: unless-stopped
+    networks:
+      - app_network
+    command: ["redis-server", "--requirepass", "my_redis_users_password"]
+
+  rabbitmq:
+    image: rabbitmq:latest
+    container_name: rabbitmq
+    ports:
+      - "5672:5672"
+    restart: unless-stopped
+    networks:
+      - app_network
+    environment:
+      RABBITMQ_DEFAULT_USER: rabituser
+      RABBITMQ_DEFAULT_PASS: rabitpassword
+
+
+  rank_calculator:
+    build:
+      context: .
+      dockerfile: RankCalculator/Dockerfile
+    depends_on:
+      - redismain
+      - redisru
+      - rediseu
+      - redisasia
+      - rabbitmq
+    restart: unless-stopped
+    networks:
+      - app_network
+
+  server1:
+    volumes:
+      - data-protection-keys:/root/.aspnet/DataProtection-Keys
+    build:
+      context: .
+      dockerfile: Valuator/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:5001
+    ports:
+      - "5001:5001"
+    depends_on:
+      - redismain
+      - redisru
+      - rediseu
+      - redisasia
+      - rabbitmq
+    restart: unless-stopped
+    networks:
+      - app_network
+
+  server2:
+    volumes:
+      - data-protection-keys:/root/.aspnet/DataProtection-Keys
+    build:
+      context: .
+      dockerfile: Valuator/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:5002
+    ports:
+      - "5002:5002"
+    depends_on:
+      - redismain
+      - redisru
+      - rediseu
+      - redisasia
+      - rabbitmq
+    restart: unless-stopped
+    networks:
+      - app_network
+
+  events_logger_1:
+    build:
+      context: .
+      dockerfile: EventsLogger/Dockerfile
+    depends_on:
+      - server1
+      - server2
+      - rabbitmq
+    restart: unless-stopped
+    networks:
+      - app_network
+
+  events_logger_2:
+    build:
+      context: .
+      dockerfile: EventsLogger/Dockerfile
+    depends_on:
+      - server1
+      - server2
+      - rabbitmq
+    restart: unless-stopped
+    networks:
+      - app_network
+
+  nginx:
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    depends_on:
+      - server1
+      - server2
+    restart: unless-stopped
+    networks:
+      - app_network
+
+volumes:
+  data-protection-keys:
+
+
+networks:
+  app_network:
+    driver: bridge
